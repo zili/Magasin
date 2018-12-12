@@ -20,6 +20,7 @@ namespace Magasin.Model
             lst.Add(new Article() { Code = 4, Libelle = "Thé", PU = 15 });
             lst.Add(new Article() { Code = 5, Libelle = "Pomme", PU = 16 });
             lst.Add(new Article() { Code = 6, Libelle = "Bananes", PU = 11 });
+
             return lst;
         }
     }
