@@ -1,14 +1,8 @@
 <h1>Articles</h1>
 <p *ngIf="!arts"><em>Loading...</em></p>
-<table class='table' *ngIf="arts">
-  <thead>
-    <tr>
-      <th>Code</th>
-      <th>Libelle</th>
-      <th>PU</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let art of arts"><td> {{ art.code }}</td><td>{{ art.libelle }}</td><td>{{ art.pu }}</td></tr>
-  </tbody>
-</table>
+<div class="row">
+  <div class="col-md-2"><strong>Code</strong></div>
+  <div class="col-md-2"><strong>Libelle</strong></div>
+  <div class="col-md-2"><strong>PU</strong></div>
+</div>
+<item *ngFor="let a of arts" [art]="a"></item>
